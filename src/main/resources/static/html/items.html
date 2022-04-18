@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!--
+/resources/static 애 있는 HTML 은 스프링 부트가 정적 리소스를 제공
+정적 리소스여서 해당 파일을 탐색기를 통해 직접 열어도 동작(서버X)
+단, 여기에 HTML 을 넣어두면 실제 서비스에서도 공개된다는 점 주의!
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" style="max-width: 600px">
+    <div class="py-5 text-center">
+        <h2>상품 목록</h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary float-end"
+                    onclick="location.href='addForm.html'" type="button">상품
+                등록</button>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>상품명</th>
+                <th>가격</th>
+                <th>수량</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="item.html">1</a></td>
+                <td><a href="item.html">테스트 상품1</a></td>
+                <td>10000</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><a href="item.html">2</a></td>
+                <td><a href="item.html">테스트 상품2</a></td>
+                <td>20000</td>
+                <td>20</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
